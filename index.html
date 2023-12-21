@@ -1,62 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>News Explorer</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="./assets/reddot.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/styles.css" />
     <script src="js/main.js" defer></script>
-</head>
-<body>
-    <h1 class="heading">NewsAPI<img src="./assets/reddot.png" width="50"/>Org</h1>
-    <hr>
-    <form class="form">
-        <input type="text" placeholder="Search">
-        <button>Go</button>
+  </head>
+  <body>
+    <h1 class="heading">
+      NewsAPI<img src="./assets/reddot.png" width="50" />Org
+    </h1>
+    <hr />
+    <form id="searchForm" class="form" onsubmit="searchNews(event)">
+      <input id="searchInput" type="text" placeholder="Search" />
+      <button id="goButton" type="submit">Go</button>
     </form>
     <main>
-        <h4>Top News from India</h4>
-        <div class="news">
-            <article id="news">
-                <img src="https://ichef.bbci.co.uk/news/1024/branded_news/15E4F/production/_132097698_14a3b510f52541172655895925f5f94f09afce2f.jpg" alt="">
-                <h2>South Korea: Students sue after teacher ends exam 90 seconds early</h2>
-                <p>South Korea's Suneung, which determines college admission, is one of the hardest exams in the world.</p>
-                <a href="#">Read full article</a>
-            </article>
-            <article id="news">
-                <img src="https://ichef.bbci.co.uk/news/1024/branded_news/15E4F/production/_132097698_14a3b510f52541172655895925f5f94f09afce2f.jpg" alt="">
-                <h2>South Korea: Students sue after teacher ends exam 90 seconds early</h2>
-                <p>South Korea's Suneung, which determines college admission, is one of the hardest exams in the world.</p>
-                <a href="#">Read full article</a>
-            </article>
-            <article id="news">
-                <img src="https://ichef.bbci.co.uk/news/1024/branded_news/15E4F/production/_132097698_14a3b510f52541172655895925f5f94f09afce2f.jpg" alt="">
-                <h2>South Korea: Students sue after teacher ends exam 90 seconds early</h2>
-                <p>South Korea's Suneung, which determines college admission, is one of the hardest exams in the world.</p>
-                <a href="#">Read full article</a>
-            </article>
-            <article id="news">
-                <img src="https://ichef.bbci.co.uk/news/1024/branded_news/15E4F/production/_132097698_14a3b510f52541172655895925f5f94f09afce2f.jpg" alt="">
-                <h2>South Korea: Students sue after teacher ends exam 90 seconds early</h2>
-                <p>South Korea's Suneung, which determines college admission, is one of the hardest exams in the world.</p>
-                <a href="#">Read full article</a>
-            </article>
-            <article id="news">
-                <img src="https://ichef.bbci.co.uk/news/1024/branded_news/15E4F/production/_132097698_14a3b510f52541172655895925f5f94f09afce2f.jpg" alt="">
-                <h2>South Korea: Students sue after teacher ends exam 90 seconds early</h2>
-                <p>South Korea's Suneung, which determines college admission, is one of the hardest exams in the world.</p>
-                <a href="#">Read full article</a>
-            </article>
-            <article id="news">
-                <img src="https://ichef.bbci.co.uk/news/1024/branded_news/8BB9/production/_132096753_gettyimages-1163276540.jpg" alt="">
-                <h2>Paul Whelan tells the BBC he feels abandoned by US</h2>
-                <p>US citizen Paul Whelan has been held for five years by Russia, and feels abandoned by his country.</p>
-                <a href="#">Read full article</a>
-            </article>
-        </div>
+      <h4 id="searchQueryHeader">Top News from India</h4>
+      <div class="news" id="newsContainer"></div>
     </main>
     <footer>
-        <p>NewsAPI<img src="./assets/reddot.png" width="10"/>Org is not responsible for content of external sites.</p>
+      <p>
+        NewsAPI<img src="./assets/reddot.png" width="10" />Org is not
+        responsible for content of external sites.
+      </p>
     </footer>
-</body>
+  </body>
 </html>
