@@ -1,1 +1,88 @@
 /* CSS RESET */
+*{
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: rgb(253, 252, 247);
+}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100&display=swap');
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    font-weight: 500;
+    margin-block: 1rem 2rem;
+    color: rgb(64, 64, 64);
+}
+hr{
+    color: black;
+    padding: 2px;
+    border: 1.5px solid black;
+}
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block: 2rem;
+}
+input, button{
+    font-size: 1.3rem;
+    padding: .7rem;
+}
+input{
+    border: 2px solid gray;
+    outline: none;
+    color: gray;
+}
+button{
+    font-weight: 700;
+    color: white;
+    background: red;
+}
+main{
+    width: 75%;
+    margin: 0 auto;
+    /* margin-bottom: 10rem; */
+}
+main > h4{
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+    font-size: 1.2rem;
+    letter-spacing  : -1px;
+    color: rgb(233, 0, 0);
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif;
+}
+main .news{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+#news{
+    width: 30%;
+}
+#news > img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    flex-shrink: 2;
+}
+#news > h2{
+    margin-block: 1rem;
+}
+
+#news > a{
+    margin-top: 1rem;
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+footer > p{
+    padding-block:4rem 2rem;
+    text-align: center;
+}
